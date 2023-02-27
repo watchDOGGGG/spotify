@@ -1,4 +1,4 @@
-import { View, Text} from "react-native";
+import { View, Text } from "react-native";
 import React from "react";
 import { GreatPickNavigation, GreatPickRouteProp } from "../consts";
 import { UnscrollContainer } from "../containers";
@@ -14,11 +14,14 @@ export function Greatepick({
   return (
     <UnscrollContainer>
       <View style={tw`h-full flex flex-col justify-center`}>
-        {images.map((image, index) => {
-          return <Text key={index}>hello</Text>;
-        })}
-
-        <MeduimText text="Great picks!" style="" />
+       <View style={tw`flex flex-row justify-center`}>
+       <View style={tw`w-[80%] flex flex-row`}>
+            {images.map((src, index) => {
+              return <Avatar style={"relative "} source={src} key={index} name="" />;
+            })}
+        </View>
+       </View>
+        <MeduimText text="Great picks!" style="mt-6" />
       </View>
     </UnscrollContainer>
   );
@@ -32,4 +35,6 @@ const images = [
   "https://guardian.ng/wp-content/uploads/2020/12/Mr-Macaroni.jpg",
 ];
 
-{/* <Avatar source={image} name={""} key={index} /> */}
+{
+  /* <Avatar source={image} name={""} key={index} /> */
+}

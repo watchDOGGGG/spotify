@@ -3,6 +3,7 @@ import { View, Text, Image } from "react-native";
 import tw from "twrnc";
 import { AvataProps } from "../consts";
 import { SmallText } from "./text";
+import Image1 from '../assets/1.jpg'
 
 export function AvatarWithName({ source, name }: AvataProps): ReactElement {
   return (
@@ -21,13 +22,11 @@ export function AvatarWithName({ source, name }: AvataProps): ReactElement {
   );
 }
 
-export function Avatar({ source }: AvataProps): ReactElement {
+export function Avatar({ source, style }: AvataProps): ReactElement {
   return (
-    <View style={tw``}>
-        <Image
-          source={{ uri: source }}
-          style={[tw`rounded-20`, { flex: 1, width: 90, height: 90 }]}
-        />
-      </View>
+      <Image
+        source={{ uri: source }}
+        style={[tw`rounded-20 ${style}`, { flex: 1, width: 70, height: 70 }]}
+      />
   );
 }

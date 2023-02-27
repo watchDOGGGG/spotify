@@ -43,7 +43,8 @@ export interface CategoriesProps {
 }
 export interface AvataProps{
     source: string,
-    name:string
+    name:string,
+    style:string
 }
 
 export type StackParamList = {

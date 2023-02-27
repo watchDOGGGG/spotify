@@ -10,8 +10,8 @@
       "image": "./assets/spotify_icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000",
-      "width":"150",
-      "height":"150"
+      "width": "150",
+      "height": "150"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -30,6 +30,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Spotify clone using react native typescript",
+    "githubUrl": "https://github.com/watchDOGGGG/spotify.git"
   }
 }
